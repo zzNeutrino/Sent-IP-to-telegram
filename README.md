@@ -23,9 +23,25 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 ### 电脑上建立一个powershell脚本
 
-1. 将一下脚本保存为***.ps1
-???
-$ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select IPV4Address
-$url='https://api.telegram.org/bot508980960:AAE920_kcLaPcqTKWTXAzlGz_vsGmuKhUR4/sendMessage?chat_id=【你的id】&text='+$ipV4.IPV4Address
-Invoke-WebRequest $url
-???
+1. 将以下脚本保存为***.ps1，替换其中【】部分
+```
+for(;;) {
+ try {
+    $ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select IPV4Address
+    $url='https://api.telegram.org/【你的API】/sendMessage?chat_id=【你的ID】&text='+$ipV4.IPV4Address
+    Invoke-WebRequest $url
+ }
+ catch {
+ }
+ #十分钟发一次
+ Start-Sleep 600
+}
+```
+
+2. 右键运行
+
+3. Telegram中将bot静音
+
+### 进阶
+
+可以用Task scheduler自动运行脚本......
