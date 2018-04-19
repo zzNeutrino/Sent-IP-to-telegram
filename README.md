@@ -1,9 +1,9 @@
 这种古怪的需求......
 
-###首先申请一个telegram的bot
+### 首先申请一个telegram的bot
 
 1. Telegram上关注botfather，申请一个bot(机器人)。关注之后发送`/newbot`创建新bot，起个难听的名字比如x6A0A，之后会让你再起个username。输入之后你会得到以下回复,请记住下面那个HTTP API
->Done! Congratulations on your new bot. You will find it at `t.me/x6AOA`. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+> Done! Congratulations on your new bot. You will find it at `t.me/x6AOA`. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
 Use this token to access the HTTP API:
 `477905544:AAxxxxxxxxxxKzl0fSeb6Z_edLQOOf4KK5w`
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
