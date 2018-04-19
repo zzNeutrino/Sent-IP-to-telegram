@@ -7,9 +7,13 @@
 Use this token to access the HTTP API:
 `477905544:AAxxxxxxxxxxKzl0fSeb6Z_edLQOOf4KK5w`
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
 2. 这时候你就可以搜索到自己刚刚创建的bot了，进去先给那个bot打个招呼。
+
 3. 关注`userinfobot`获得自己的id，一个九位的数字，记下来。
+
 4. 接下来小试牛刀，重构以下URL，粘贴到浏览器中回车，不出意外的话是不是收到了`我吹呀吹`几个字？？
+
 >https://api.telegram.org/bot[替换成刚刚的HTTP API]/sendMessage?chat_id=[你步骤3中的ID]&text=我吹呀吹
 >
 >替换完了长这个样子
