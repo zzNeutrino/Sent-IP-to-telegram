@@ -19,3 +19,13 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >替换完了长这个样子
 >https://api.telegram.org/bot508980960:AAExxxxx_kcLaPcqTKWTXAzlGz_vsGmuKhUR4/sendMessage?chat_id=508911160&text=我吹呀吹
 
+5. 粘贴到浏览器里面试一下看telegram里面收到了没有
+
+### 电脑上建立一个powershell脚本
+
+1. 将一下脚本保存为***.ps1
+???
+$ipV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select IPV4Address
+$url='https://api.telegram.org/bot508980960:AAE920_kcLaPcqTKWTXAzlGz_vsGmuKhUR4/sendMessage?chat_id=【你的id】&text='+$ipV4.IPV4Address
+Invoke-WebRequest $url
+???
